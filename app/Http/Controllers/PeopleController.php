@@ -91,7 +91,7 @@ class PeopleController extends Controller
     {
         $destroy = People::find($id);
         $destroy->delete();
-        return redirect()->back();
+        return redirect('/');
     }
 
     public function destroyALL()

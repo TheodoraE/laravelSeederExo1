@@ -29,5 +29,5 @@ Route::get('/show-people/{id}', [PeopleController::class, 'show']);
 Route::get('/edit-people/{id}', [PeopleController::class, 'edit']);
 
 Route::post('/update-people/{id}', [PeopleController::class, 'update']);
-Route::post('/destroy-people/{id}', [PeopleController::class], 'destroy');
+Route::post('/destroy-people/{id}', [PeopleController::class, 'destroy']);
 Route::post('/destroyALL', [PeopleController::class, 'destroyALL']);
